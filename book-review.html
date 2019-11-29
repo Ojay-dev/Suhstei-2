@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sidebar</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <nav id="navbar">
+        <div>
+          <a href="#">
+            <img src="assets/icons/logo.svg" alt="suhstei" class="logo">
+          </a>
+
+          <div class="vl nav-link"></div>
+
+          <form>
+            <input type="search" placeholder="&#xF002; Search" aria-label="Search" style="font-family: SFProText, FontAwesome">
+          </form>
+        </div>
+
+        <ul class="nav-link">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#" class="sign-up">Sign Up</a></li>
+        </ul>
+
+        <button class="openbtn hamburger-menu" onclick="openNav()" aria-disabled="true">&#9776;</button>
+        <ul id="mySidepanel" class="sidepanel hamburger-menu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="header-section">
+        <article class="container">
+          <h1>Where books and people meet.</h1>
+          <h3>Connect with book lovers and share books to read.</h3>
+        </article>
+      </div>
+
+      <div class="book-section bg-white book-list">
+        <div class="container">
+
+          <div class="row review-section">
+            <div class="col-md-4 review-info">
+              <div class="book-thumbnail" >
+                <img src="assets/images/book1-4.png" alt="">
+
+                <h5>Connect with Book Owner</h5>
+
+                <div class="contact-btn">
+                  <button><i><img src="assets/icons/baseline-call-24px.svg" alt=""></i> call</button>
+                  <button><i><img src="assets/icons/whatsapp.svg" alt=""></i> chat</button>
+                </div>
+
+                <button>Borrow Book</button>
+              </div>
+            </div>
+
+            <div class="col-md-8 review-writeup">
+              <article>
+                <div class="book-thumbnail">
+                  <span class="image-cropper" style=" width: 40px; height: 40px;">
+                    <img src="assets/images/avatar.jpg" alt="avatar">
+                  </span>
+                  <h2>Book review</h2>
+                </div>
+
+                <p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur doloreadipisicing labore et dolore magna aliqua.
+
+                  <br><br>  Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur doloreadipisicing labore et dolore magna aliqua in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+
+                  <br><br>  Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur doloreadipisicing labore et dolore magna aliqua.
+
+                  <br><br>  Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur doloreadipisicing labore et dolore magna aliqua in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. deserunt mollit anim id est laborum.</p>
+              </article>
+            </div>
+          </div>
+
+
+          <h3>More Books</h3>
+
+          <div class="book-section-grid">
+            <div class="book-section-subGrid">
+              <img src="assets/images/book1-1.png" alt="">
+              <h4>Photographer’s trouble shooter</h4>
+              <span>by <a href="#">Michael Freeman</a></span>
+            </div>
+
+            <div class="book-section-subGrid">
+              <img src="assets/images/book1-2.png" alt="">
+              <h4>Photographer’s trouble shooter</h4>
+              <span>by <a href="#">Michael Freeman</a></span>
+            </div>
+
+            <div class="book-section-subGrid">
+              <img src="assets/images/book1-3.png" alt="">
+              <h4>Photographer’s trouble shooter</h4>
+              <span>by <a href="#">Michael Freeman</a></span>
+            </div>
+
+            <div class="book-section-subGrid">
+              <img src="assets/images/book1-4.png" alt="">
+              <h4>Photographer’s trouble shooter</h4>
+              <span>by <a href="#">Michael Freeman</a></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <h3>&copy;2019 Suhstei - All Rights Reserved.</h3>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

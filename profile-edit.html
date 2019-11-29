@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Suhstei / Edit-Profile </title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+
+      <nav id="navbar">
+        <div>
+          <a href="#">
+            <img src="assets/icons/logo.svg" alt="suhstei" class="logo">
+          </a>
+
+          <div class="vl nav-link"></div>
+
+          <form>
+            <input type="search" placeholder="&#xF002; Search" aria-label="Search" style="font-family: SFProText, FontAwesome">
+          </form>
+        </div>
+
+        <ul class="nav-link">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#" class="sign-up">Sign Up</a></li>
+        </ul>
+
+        <button class="openbtn hamburger-menu" onclick="openNav()" aria-disabled="true">&#9776;</button>
+        <ul id="mySidepanel" class="sidepanel hamburger-menu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- The sidebar -->
+    <div class="sidebar" id="sidebar">
+      <a class="active" href="#home"><i class="material-icons">account_circle</i>Profile</a>
+      <a href="#news"><i class="material-icons">list_alt</i>My Books</a>
+      <a href="#contact"><i class="material-icons">history</i>History</a>
+      <a href="#about"><i class="material-icons">insert_chart_outlined</i>Books Borrowed</a>
+    </div>
+
+    <section class="main profile">
+      <div class="profile-header">
+        <h1>My Profile</h1>
+      </div>
+
+      <div style="position: relative;">
+        <span class="image-cropper" style=" width: 150px; height: 150px;">
+          <img src="assets/images/avatar.jpg" alt="profile image" avatar>
+        </span>
+        <button class="edit-img-btn"><i class="material-icons">edit</i></button>
+      </div>
+
+      <form action="">
+        <!-- First Name -->
+        <input type="text" placeholder="First Name" value="Shenske" required>
+
+        <!-- Last Name -->
+        <input type="text" placeholder="Last Name" value="Nakamura" required>
+
+        <!-- email -->
+        <input type="text" placeholder="Email address"  value="shenske.nakam@gmail.com" required>
+
+          <!-- phone number -->
+          <input type="number" placeholder="Phone Number" value="08034567890" required>
+
+        <!-- Submit button -->
+        <input type="submit" value="Save Changes" class="edit-btn">
+      </form>
+    </section>
+
+    <!-- <footer id="footer">
+      <h3>&copy;2019 Suhstei - All Rights Reserved.</h3>
+    </footer> -->
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

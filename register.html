@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Suhstei / New Book </title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body {
+      background: #E5E5E5;
+    }
+    .signup-form {
+      width:50%;
+      margin: auto;
+      margin-block-start: 5%;
+      margin-block-end: 12%;
+      padding: 5% 6%;
+      padding-block-start: 3%;
+      background: #FFFFFF;
+      box-shadow: 0px 7.52055px 16.7123px rgba(171, 180, 189, 0.23);
+      border-radius: 10px;
+    }
+
+    .signup-form input {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-weight: 450;
+      font-size: 1rem;
+      font-family: CircularStd;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .signup-form input::-webkit-input-placeholder {
+      /* Edge */
+      font-family: CircularStd;
+      font-weight: 450;
+      font-size: 1rem;
+      color: #ABB4BD;
+    }
+    .signup-form input:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      font-family: CircularStd;
+      font-weight: 450;
+      font-size: 1rem;
+      color: #ABB4BD;
+    }
+    .signup-form input::placeholder {
+      font-family: CircularStd;
+      font-weight: 450;
+      font-size: 1rem;
+      color: #ABB4BD;
+    }
+    .signup-form h2 {
+      font-family: CircularStd;
+      font-weight: 500;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #070809;
+    }
+
+    .signup-form h3 {
+      font-family: CircularStd;
+      font-weight: 450;
+      font-size: 18px;
+      text-align: center;
+      line-height: 1.7rem;
+      margin-bottom: .8rem;
+      color: #ABB4BD;
+    }
+
+    .signup-form a, div[register] {
+      font-family: CircularStd;
+      font-weight: 450;
+      font-size: 14px;
+      color: #ABB4BD;
+    }
+
+    .signup-form div[align="center"] {
+      margin-top: 1.5rem;
+    }
+    .signup-form div[align="center"] > a {
+      color: #4169E2;
+    }
+
+    .signup-form .button {
+      color: white;
+      font-weight: 450;
+      font-size: 1.25rem;
+      padding: 1.2rem;
+      /* margin: 8px 0; */
+      background: #4169E2;
+      box-shadow: 0px 9px 20px rgba(171, 180, 189, 0.148862);
+    }
+
+    @media (max-width: 1024px) {
+      .signup-form {
+        width:50%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .signup-form {
+        width:70%;
+      }
+    }
+
+    @media (max-width: 600px){
+    .signup-form {
+      width: 100%;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      border-radius: 0;
+      padding-block-start: 38px;
+      padding-block-end: 55px;
+    }
+    .signup-form h2, .signup-form h3 {
+      text-align: left;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+
+      <nav id="navbar">
+        <div>
+          <a href="#">
+            <img src="assets/icons/logo.svg" alt="suhstei" class="logo">
+          </a>
+
+          <div class="vl nav-link"></div>
+
+          <form>
+            <input type="search" placeholder="&#xF002; Search" aria-label="Search" style="font-family: SFProText, FontAwesome">
+          </form>
+        </div>
+
+        <ul class="nav-link">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#" class="sign-up">Sign Up</a></li>
+        </ul>
+
+        <button class="openbtn hamburger-menu" onclick="openNav()" aria-disabled="true">&#9776;</button>
+        <ul id="mySidepanel" class="sidepanel hamburger-menu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+
+      <div  class="signup-form">
+        <h2>Register on Suhstei</h2>
+        <h3>Personal details</h3>
+
+        <form action="">
+          <div class="row">
+            <div class="col-6 col-md-6">
+              <!-- firstname -->
+              <input type="text" placeholder="First Name" required>
+            </div>
+
+            <div class="col-6 col-md-6">
+              <!-- lastname -->
+              <input type="text" placeholder="Last Name" required>
+            </div>
+          </div>
+
+          <!-- phone no -->
+          <input type="text" placeholder="Phone Number (WhatsApp Number)" required>
+
+          <!-- email -->
+          <input type="text" placeholder="Email Address" required>
+
+          <!-- Password -->
+          <input type="password" placeholder="Password" required>
+
+          <!-- Submit button -->
+          <input type="submit" value="Register" class="button">
+
+          <div register align="center">Already have an account? <a href="register.html">Login now</a></div>
+        </form>
+    </div>
+    </section>
+
+    <footer id="footer">
+      <h3>&copy;2019 Suhstei - All Rights Reserved.</h3>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

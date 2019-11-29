@@ -8,12 +8,14 @@
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-  <div class="wrapper">
+  <div id="wrapper">
     <header>
 
       <nav id="navbar">
@@ -47,37 +49,45 @@
       </nav>
     </header>
 
-    <section>
+    <!-- The sidebar -->
+    <div class="sidebar" id="sidebar">
+      <a class="active" href="#home"><i class="material-icons">account_circle</i>Profile</a>
+      <a href="#news"><i class="material-icons">list_alt</i>My Books</a>
+      <a href="#contact"><i class="material-icons">history</i>History</a>
+      <a href="#about"><i class="material-icons">insert_chart_outlined</i>Books Borrowed</a>
+    </div>
+
+    <section class="main">
+      <p>
+          <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac felis in ipsum bibendum gravida. Donec felis purus, viverra vitae lorem vitae, lacinia lobortis nulla. Nunc pellentesque nulla ut tortor viverra, ac maximus eros tristique. Curabitur sollicitudin, ipsum a ultricies dignissim, justo sapien lacinia odio, vitae suscipit justo arcu sed quam. Integer euismod ligula nec velit lacinia, eu bibendum ipsum fermentum. Quisque dignissim erat dolor, eget efficitur tellus ultricies eget. Nam mollis dapibus vulputate.
+
+          <br><br>Mauris lobortis ornare leo, id fringilla velit lobortis sed. Duis tempor a eros ut semper. Nunc dictum quam ac lectus accumsan, faucibus feugiat purus elementum. Donec eu libero malesuada, luctus felis quis, commodo nibh. Proin consectetur ultrices justo vitae suscipit. Nam at ullamcorper erat. Proin vel tortor sem. Nam ultricies vitae diam at vulputate. Nam ac est rhoncus, interdum urna vel, tincidunt turpis. Aliquam sed urna sed mauris auctor dignissim. Aenean a arcu in orci varius vestibulum. Suspendisse ultricies hendrerit gravida. Donec a imperdiet justo, nec hendrerit libero. Phasellus eleifend, diam et pharetra gravida, odio lectus eleifend arcu, vel fringilla leo diam eu tortor. Pellentesque sem dolor, blandit ut quam eu, venenatis bibendum ipsum. Curabitur non erat facilisis, interdum sapien ac, accumsan tortor.
+
+          <br><br>Curabitur tempor, sapien a malesuada gravida, erat erat gravida sapien, vitae laoreet tortor erat vel leo. Proin ultricies metus sed sapien commodo, eu efficitur leo rutrum. Morbi rutrum diam ut lobortis dapibus. Sed tincidunt tempor diam nec vestibulum. Aliquam condimentum ex felis, commodo ultrices dui scelerisque quis. Praesent rutrum accumsan nibh quis mattis. Quisque nulla eros, luctus ut euismod at, efficitur a ligula.
+
+          <br><br>Quisque nec dapibus dui. Aliquam in ultrices ante. Cras ut nibh orci. Aenean iaculis malesuada orci, non faucibus sem pharetra in. Phasellus viverra velit pulvinar odio aliquet, ac condimentum nulla ultricies. Vivamus vitae nisl quis leo venenatis rutrum. Nam vitae nunc finibus, tempor urna vel, tristique orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut molestie felis in augue semper, in laoreet purus eleifend. Suspendisse in quam id massa sollicitudin cursus et sed elit. Proin bibendum dapibus purus, vel dapibus velit egestas pellentesque. Maecenas dictum risus vel nunc rutrum vehicula. Aliquam erat volutpat. Maecenas accumsan placerat turpis ut laoreet. Integer ac elit dolor.
+
+          <br><br>Sed condimentum nisi sem, in consectetur ex venenatis eu. Integer nec aliquam justo. Nunc eu lacus at ante dapibus sodales. Cras mattis id sapien eu tempus. Maecenas tempus arcu eget faucibus vestibulum. Mauris in eleifend arcu. Sed ullamcorper vehicula turpis et dictum. Nullam consectetur lectus vel dignissim sagittis. Pellentesque sagittis placerat velit, vitae molestie enim.
+
+          <br><br>Suspendisse diam quam, tincidunt in rhoncus et, placerat ac libero. Nulla blandit sapien sit amet rutrum sollicitudin. Curabitur blandit fringilla sem, quis elementum mi faucibus eu. Fusce varius urna justo, nec efficitur nunc mattis sed. In id urna nulla. Maecenas sed scelerisque ex. Donec maximus egestas sem et sodales. Praesent nibh turpis, accumsan a risus in, consectetur consequat sem. Ut nec sem et enim dapibus lobortis. Vestibulum imperdiet faucibus accumsan. Maecenas posuere bibendum lectus sed interdum.
+
+          <br><br>Ut accumsan elit vitae turpis viverra, quis sagittis erat auctor. Mauris accumsan eros at nisl posuere, quis viverra mi euismod. Nunc id libero quis metus suscipit tincidunt. Etiam bibendum, sem id tempor lobortis, urna tellus fermentum nibh, vel mattis libero nibh in ante. Aenean id ultrices enim, id convallis quam. Morbi quis facilisis libero, vel accumsan velit. Etiam facilisis sapien eu sapien accumsan cursus. Praesent vitae sollicitudin nunc.
+
+          <br><br>Maecenas felis nisi, commodo non accumsan non, rhoncus eu ante. Mauris ut elit vel ligula vulputate finibus ut rhoncus ligula. Phasellus quis erat dolor. Duis convallis eros eu aliquet vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi iaculis congue felis, eu mollis magna luctus eget. Sed in aliquet urna. Sed in tincidunt nisi. In magna enim, pulvinar eget cursus sed, eleifend at massa. Nullam accumsan odio quis erat blandit, ut aliquam turpis suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris sed arcu tellus.
+
+          <br><br>Suspendisse dignissim augue id libero pretium, sed tincidunt turpis ultricies. Mauris vitae convallis mi. Curabitur pretium tincidunt rhoncus. Praesent ornare consequat justo in venenatis. Donec eu felis id turpis auctor euismod sit amet eu odio. Proin at fringilla nisi, ut mollis libero. Aenean condimentum ante id turpis placerat, vel gravida purus bibendum. Pellentesque mollis, sem nec maximus porta, ligula augue maximus ligula, ac aliquam tellus mauris quis magna. Nullam efficitur viverra quam ut dapibus. In sagittis est libero, id accumsan ex lobortis efficitur.
+
+          <br><br>Quisque massa tellus, venenatis vitae nibh vulputate, consectetur semper orci. Nullam aliquet velit sed justo rhoncus, sed pellentesque odio placerat. Aenean dignissim eleifend ultricies. Fusce in semper risus. Quisque cursus nunc sit amet ligula pellentesque dignissim. Donec elementum et orci sit amet porttitor. Maecenas elementum porta ligula vel rhoncus. Maecenas nibh mi, tempus ac ultricies ac, vestibulum vitae massa. Donec lorem purus, fringilla non urna sit amet, interdum mollis arcu. Integer id arcu aliquet, posuere elit ullamcorper, cursus orci. Vivamus eget erat vel massa aliquam pellentesque eget nec enim. Duis interdum dictum odio. Nam gravida aliquam enim et dictum. Praesent ut nibh et est rutrum eleifend. Ut ligula ipsum, rutrum eget orci non, lacinia convallis erat. Duis id volutpat mi.
+      </p>
 
     </section>
 
-    <footer>
+    <!-- <footer id="footer">
       <h3>&copy;2019 Suhstei - All Rights Reserved.</h3>
-    </footer>
+    </footer> -->
   </div>
 
-  <script>
-    /* Set the width of the sidebar to 250px (show it) */
-    function openNav() {
-      document.getElementById("mySidepanel").style.width = "347px";
-    }
-
-    /* Set the width of the sidebar to 0 (hide it) */
-    function closeNav() {
-      document.getElementById("mySidepanel").style.width = "0";
-    }
-
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-100px";
-    }
-      prevScrollpos = currentScrollPos;
-    }
-  </script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>

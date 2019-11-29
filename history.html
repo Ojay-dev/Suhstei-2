@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Suhstei / Profile </title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+
+      <nav id="navbar">
+        <div>
+          <a href="#">
+            <img src="assets/icons/logo.svg" alt="suhstei" class="logo">
+          </a>
+
+          <div class="vl nav-link"></div>
+
+          <form>
+            <input type="search" placeholder="&#xF002; Search" aria-label="Search" style="font-family: SFProText, FontAwesome">
+          </form>
+        </div>
+
+        <ul class="nav-link">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#" class="sign-up">Sign Up</a></li>
+        </ul>
+
+        <button class="openbtn hamburger-menu" onclick="openNav()" aria-disabled="true">&#9776;</button>
+        <ul id="mySidepanel" class="sidepanel hamburger-menu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- The sidebar -->
+    <div class="sidebar" id="sidebar">
+      <a href="#profile"><i class="material-icons">account_circle</i>Profile</a>
+      <a href="#books" class="active"><i class="material-icons">list_alt</i>My Books</a>
+      <a href="#history"><i class="material-icons">history</i>History</a>
+      <a href="#borrowed-books"><i class="material-icons">insert_chart_outlined</i>Books Borrowed</a>
+    </div>
+
+    <section class="main profile " my-books>
+      <div class="profile-header">
+        <h1>History</h1>
+      </div>
+
+      <div class="book-list-header">
+        <h2>Showing Recent History</h2>
+        <!-- <span>(Confirm by click the recieved button once book is returned)</span> -->
+      </div>
+
+      <div class="history">
+        <span>9:15 AM | Mon, Feb 11, 2019</span>
+
+        <div main>
+          <div>
+            <span class="image-cropper" style=" width: 36px; height: 36px;">
+              <img src="assets/images/avatar.jpg" alt="profile image" avatar>
+            </span>
+
+            <h3>Mary Shipeolu</h3>
+          </div>
+
+          <div>
+            <h4>Book Status</h4>
+            <span>Returned</span>
+          </div>
+        </div>
+
+        <h5>BOOK BORROWED</h5>
+        <span><h6>Photographer’s trouble shooter</h6><span>9:15 AM | Mon, Feb 11, 2019</span></span>
+      </div>
+
+      <div class="history">
+        <span>9:15 AM | Mon, Feb 11, 2019</span>
+
+        <div main>
+          <div>
+            <span class="image-cropper" style=" width: 36px; height: 36px;">
+              <img src="assets/images/avatar.jpg" alt="profile image" avatar>
+            </span>
+
+            <h3>Mary Shipeolu</h3>
+          </div>
+
+          <div>
+            <h4>Book Status</h4>
+            <span>Returned</span>
+          </div>
+        </div>
+
+        <h5>BOOK BORROWED</h5>
+        <span><h6>Photographer’s trouble shooter</h6><span>9:15 AM | Mon, Feb 11, 2019</span></span>
+      </div>
+
+      <div class="history">
+        <span>9:15 AM | Mon, Feb 11, 2019</span>
+
+        <div main>
+          <div>
+            <span class="image-cropper" style=" width: 36px; height: 36px;">
+              <img src="assets/images/avatar.jpg" alt="profile image" avatar>
+            </span>
+
+            <h3>Mary Shipeolu</h3>
+          </div>
+
+          <div>
+            <h4>Book Status</h4>
+            <span>Returned</span>
+          </div>
+        </div>
+
+        <h5>BOOK BORROWED</h5>
+        <span><h6>Photographer’s trouble shooter</h6><span>9:15 AM | Mon, Feb 11, 2019</span></span>
+      </div>
+
+      <div class="history">
+        <span>9:15 AM | Mon, Feb 11, 2019</span>
+
+        <div main>
+          <div>
+            <span class="image-cropper" style=" width: 36px; height: 36px;">
+              <img src="assets/images/avatar.jpg" alt="profile image" avatar>
+            </span>
+
+            <h3>Mary Shipeolu</h3>
+          </div>
+
+          <div>
+            <h4>Book Status</h4>
+            <span>Returned</span>
+          </div>
+        </div>
+
+        <h5>BOOK BORROWED</h5>
+        <span><h6>Photographer’s trouble shooter</h6><span>9:15 AM | Mon, Feb 11, 2019</span></span>
+      </div>
+
+    </section>
+
+    <!-- <footer id="footer">
+      <h3>&copy;2019 Suhstei - All Rights Reserved.</h3>
+    </footer> -->
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Drag 'n' Drop</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    body {
+      margin:20px;
+    }
+    label {
+      font-family: SFProText;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #8A939A;
+    }
+    input {
+      width: 100%;
+      height: 48px;
+      padding: 1rem;
+      margin-block-start: 11px;
+      margin-block-end: 45px;
+      font-weight: 450;
+      font-size: 1rem;
+      font-family: CircularStd;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input::placeholder {
+      font-family: SFProText;
+      font-size: 14px;
+      line-height: 24px;
+      /* padding: 12px 0; */
+      color: #8A939A;
+    }
+    textarea {
+      width: 100%;
+      /* height: 48px; */
+      padding: 1rem;
+      margin-top: 11px;
+      margin-block-end: 45px;
+      font-weight: 450;
+      font-size: 1rem;
+      font-family: CircularStd;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea::placeholder {
+      font-family: SFProText;
+      font-size: 14px;
+      line-height: 24px;
+      /* padding: 12px 0; */
+      color: #8A939A;
+    }
+    button {
+      font-family: SFProText;
+      font-size: 16px;
+      line-height: 19px;
+      padding: 11px 44px;
+      color: #FFFFFF;
+      background: #4169E2;
+      border: 0;
+      border-radius: 4px;
+    }
+    .img-upload{
+      position: relative;
+      /* top: 50%; */
+      /* left: 50%; */
+      /* margin-top: -100px; */
+      /* margin-left: -250px; */
+      width: 193px;
+      height: 203px;
+      border: 4px dashed #758CCF;
+      border-radius: 2px;
+    }
+    .img-upload p{
+      position: absolute;
+      /* width: 100%; */
+      /* height: 100%; */
+      /* top: 50%; */
+      padding: 75px 30px;
+      font-family: SFProText;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      margin: 0;
+      color: #1D2029;
+    }
+    .img-upload input{
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <div class="row">
+      <div action="upload.php" method="POST" class="img-upload col-md-2">
+        <input type="file" multiple>
+        <p>Click to Upload Image</p>
+      </div>
+
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="Book-Title">Book Title</label>
+            <input type="text" name="Book-Title" id="" placeholder="Book Title" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="Author">Author</label>
+            <input type="text" name="Book-Title" id="" placeholder="Author" required>
+          </div>
+        </div>
+
+        <label for="Book-Review">Book Review</label>
+        <textarea name="message" rows="10" cols="30" placeholder="Write review here..." required></textarea>
+
+        <button>Save</button>
+      </div>
+
+    </div>
+  </form>
+
+  <script>
+    $(document).ready(function(){
+      $('form input').change(function () {
+        $('form p').text(this.files.length + " file(s) selected");
+      });
+    });
+  </script>
+
+</body>
+</html>

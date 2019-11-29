@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sidebar with icon</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Style the sidebar - fixed full height */
+    .sidebar {
+      position: fixed;
+      height: calc(100% - 85px);
+
+      width: 25%;
+      z-index: 1;
+      top: 85px;
+      left: 0;
+      background-color: #ffffff;
+      border-right: 1px solid #f1f1f1;
+      overflow: hidden;
+      padding-top: 16px;
+    }
+
+    /* Style sidebar links */
+    .sidebar a {
+      display: flex;
+      padding: 15px 8px 15px 60px;
+      text-decoration: none;
+      font-family: SFProText;
+      font-size: 16px;
+      line-height: 25px;
+      margin-block-end: 68px;
+      color: #293D4A;
+    }
+    .sidebar a:first-child {
+      margin-block-start: 46px;
+    }
+
+    .sidebar i {
+      margin-inline-end: 15px;
+    }
+
+    /* Style links on mouse-over */
+    .sidebar a:hover:not(.active), .sidebar .active {
+      color: #4169E2;
+      border-inline-start: 4px solid #4169E2;
+    }
+
+    .sidebar a:hover:not(.active) {
+      padding-inline-start: 56px;
+    }
+
+    /* Style the main content */
+    .main {
+      margin-left: 160px; /* Same as the width of the sidenav */
+      padding: 0px 10px;
+    }
+
+    /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+    @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+    }
+  </style>
+</head>
+<body>
+  <!-- The sidebar -->
+  <div class="sidebar">
+    <a class="active" href="#home"><i class="material-icons">account_circle</i>Profile</a>
+    <a href="#news"><i class="material-icons">list_alt</i>My Books</a>
+    <a href="#contact"><i class="material-icons">history</i>History</a>
+    <a href="#about"><i class="material-icons">insert_chart_outlined</i>Books Borrowed</a>
+  </div>
+
+</body>
+</html>
